@@ -1,0 +1,764 @@
+body {
+    margin: 0px;
+    font-family: sans-serif;
+    font-size: 30px;
+    background: linear-gradient(to bottom left, #b5f1dc 29%, #60c5e6 50%);
+   
+}
+
+/* Body Header */
+
+#body-header {
+    height: 65vh;
+    opacity: 0.8;
+    background-image: url(img/laptop-2838921.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 1.2rem;
+    text-shadow: 3px -2px 0px rgba(37, 35, 35, 1);
+    animation: head 5s;
+
+}
+@keyframes head {
+	0% {
+		background-position: 100% 50%;
+	}
+
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+/* Horizontal Lists */
+
+.horizontal-list {
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+
+
+  
+}
+
+.horizontal-list li {
+    display: inline-block;
+    margin: 0px 8px 8px 0px;
+    font-weight: 100;
+    font-size: 2rem;
+    animation: list 1s ease 0s 1 normal forwards;
+ 
+}
+@keyframes list {
+	0% {
+		transform: scaleX(0);
+	}
+
+	100% {
+		transform: scaleX(1);
+	}
+}
+
+
+
+.horizontal-list li a {
+    color: rgb(253, 245, 245);
+    text-decoration: none;
+
+}
+
+.nav-menu li a {
+    transition: color 0.5s, border-bottom 2s;
+
+}
+
+.nav-menu li a:hover {
+    color: rgb(233, 96, 5);
+    border-bottom: 1px solid rgb(18, 18, 19);
+ 
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+/*all device */
+/* For screens between 768px and 1024px (tablets) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    body {
+        font-size: 25px;
+    }
+
+    .horizontal-list li {
+        font-size: 1.8rem;
+    }
+}
+
+/* For screens larger than 1024px (desktops) */
+@media (min-width: 1025px) {
+    /* Add any specific styles for larger screens here */
+}
+/* Name and Social Icons*/
+
+#name-social-container {
+    margin-top: 20vh;
+}
+
+#my-name {
+    font-size: 5rem;
+    letter-spacing: 0.1rem;
+    color: rgb(253, 246, 246);
+    font-weight: 700;
+    margin-bottom: 0.5rem; 
+    animation: myAnim 3s ease 0s 1 normal forwards;
+}
+@keyframes myAnim {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 1;
+		transform: translateY(-45px);
+	}
+
+	24% {
+		opacity: 1;
+	}
+
+	40% {
+		animation-timing-function: ease-in;
+		transform: translateY(-24px);
+	}
+
+	65% {
+		animation-timing-function: ease-in;
+		transform: translateY(-12px);
+	}
+
+	82% {
+		animation-timing-function: ease-in;
+		transform: translateY(-6px);
+	}
+
+	93% {
+		animation-timing-function: ease-in;
+		transform: translateY(-4px);
+	}
+
+	25%,
+	55%,
+	75%,
+	87% {
+		animation-timing-function: ease-out;
+		transform: translateY(0px);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+
+
+
+.social-icons li {
+    border-radius: 50%;
+    font-size: 1rem;
+    padding: 7px;
+    background-color: #658d2dd6;
+    animation:  icon 2s ease 0s 1 normal forwards;
+
+}
+@keyframes icon {
+	0% {
+		opacity: 0;
+		transform: rotate(-540deg) scale(2);
+	}
+
+	100% {
+		opacity: 1;
+		transform: rotate(0) scale(1);
+	}
+}
+
+.social-icons li:hover {
+    box-shadow: 0px 0px 6px 4px rgba(233, 41, 7, 0.3);
+  
+}
+
+
+.social-icons li a i:hover {
+    -webkit-box-shadow: -5px -3px 67px 31px rgba(162,240,26,1);
+-moz-box-shadow: -5px -3px 67px 31px rgba(162,240,26,1);
+box-shadow: -5px -3px 67px 31px rgba(162,240,26,1);
+}
+
+.social-icons li a img {
+    width: 1rem;
+    padding: 8px;
+}
+#about {
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+
+#my-image {
+    height: 16rem;
+    width: 14rem;
+    margin: auto;
+    margin-top: -17vh;
+}
+
+#my-image img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+
+}
+
+#about-para {
+    padding: 10px;
+    width: 70%;
+    text-align: justify;
+    color: rgb(64, 60, 60);
+    line-height: 28px;
+    font-size: 1.1rem;
+    margin: auto;
+}
+
+
+@media (max-width: 767px) {
+    #my-name {
+        font-size: 3rem;
+    }
+
+    .social-icons li {
+        font-size: 0.8rem;
+        padding: 5px;
+    }
+
+    #my-image {
+        height: 12rem;
+        width: 10rem;
+        margin-top: -15vh;
+    }
+
+    #about-para {
+        width: 90%;
+        font-size: 1rem;
+        line-height: 24px;
+    }
+}
+
+/* For screens between 768px and 1024px (tablets) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    #my-name {
+        font-size: 4rem;
+    }
+
+    .social-icons li {
+        font-size: 0.9rem;
+    }
+
+    #my-image {
+        height: 14rem;
+        width: 12rem;
+        margin-top: -16vh;
+    }
+
+    #about-para {
+        width: 80%;
+        font-size: 1.1rem;
+    }
+}
+
+/* For screens larger than 1024px (desktops) */
+@media (min-width: 1025px) {
+    /* Add any specific styles for larger screens here */
+}
+/*Skills Section*/
+
+.skills-display {
+    width: 100%;
+    padding: 15px;
+    margin: auto;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.section-heading mb75px {
+    animation: skills 1s ease 0s 1 normal forwards;
+
+}
+@keyframes skills {
+ 
+        0% {
+            opacity: 0;
+            transform: rotateX(-100deg);
+            transform-origin: top;
+        }
+    
+        100% {
+            opacity: 1;
+            transform: rotateX(0deg);
+            transform-origin: top;
+        }
+    }
+   .skill-progress {
+    width: 11rem;
+    height: 2.2rem;
+    background-color: lightgrey;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 2px 1px #b9b9b9 inset;
+    margin: 25px;
+    overflow: hidden;
+}
+.skill-progress > div {
+    border-radius: 20px 0px 0px 20px;
+    box-shadow: 1px 1px 5px 2px #989882;
+}
+
+.skill-name span {
+    color: white;
+    font-size: 1rem;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+/*bakchodi */
+
+.skill-progress :hover {
+    color: #f2f2f2;
+    box-shadow: 20px 50px 100px rgba(0, 0, 0, 0.5);
+  }
+  
+  .skill-progress .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.5s ease-in;
+    pointer-events: none;
+    width: 100%;
+    height: 200%;
+    overflow: hidden;
+  }
+  
+  .skill-progress .fifty-percent.mb-blue:hover,
+  .skill-progress .fifty-percent.mb-blue:hover~.skill-name {
+    opacity: 1;
+    background: #e2a9e5;
+  background: -moz-linear-gradient(-45deg, #e2a9e5 15%, #2b94e5 100%);
+  background: -webkit-linear-gradient(-45deg, #e2a9e5 15%,#2b94e5 100%);
+  background: linear-gradient(135deg, #e2a9e5 15%,#2b94e5 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2a9e5', endColorstr='#2b94e5',GradientType=1 );
+  }
+
+
+
+/*timeline*/
+
+/* Work Experience */
+
+.timeline {
+    position: relative;
+    width: 75%;
+  
+    margin: auto;
+}
+
+.timeline-box {
+    padding: 5px;
+    width: 40%;
+    min-height: 150px;
+    position: relative;
+    left: 5%;
+    text-align: right;
+}
+
+.timeline-box::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: rgb(27, 23, 23);
+    top: 25%;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.timeline-box:nth-child(2n) {
+    left: 53%;
+}
+
+.timeline-box:nth-child(2n+1)::after {
+    right: -11.8%;
+}
+
+.timeline-box:nth-child(2n)::after {
+    left: -9%;
+}
+
+.timeline-container {
+    padding: 8px;
+}
+
+.timeline-logo {
+    position: absolute;
+    width: 50px;
+    overflow: hidden;
+}
+
+.timeline-logo > img {
+    width: 100%;
+}
+
+#timeline-divider {
+    position: absolute;
+    width: 0;
+    top: 10%;
+    left: 50%;
+    border: 1px dashed #0096fa6b;
+    height: 66%;
+    color: #433E3F;
+}
+
+#timeline-divider .timeline-traveller {
+    position: sticky;
+    top: 135px;
+    z-index: 2;
+}
+
+#timeline-divider i {
+    transform: rotate(90deg);
+    margin-top: -35px;
+    display: block;
+    color: #2857a4;
+}
+
+.experience-designation {
+    font-size: 1.4rem;
+}
+
+.experience-company-name {
+    margin: 5px 0 0;
+    color: #eb822d;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.experience-duration {
+    color: #433d3d;
+    font-weight: 100;
+    color: rgb(34, 30, 30);
+    font-size: 1rem;
+}
+
+.experience-description {
+    font-size: 14px;
+    padding: 2px;
+    color: rgb(58, 56, 56);
+    line-height: 20px;
+}
+
+.text-align-justify {
+    text-align: justify;
+}
+
+
+/* Portfolio Section */
+
+#portfolio-container {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 50px;
+    margin-bottom: 20px;
+    justify-content: space-around;
+}
+
+.portfolio-image-container {
+    max-width: 300px;
+    overflow: hidden;
+    margin: 10px;
+    border-radius: 12px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.portfolio-image-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.portfolio-details {
+    transition: all 0.5s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    color: transparent;
+    text-align: center;
+    padding: 10px;
+}
+
+.portfolio-image-container:hover {
+    box-shadow: 0 0 20px #74ADC8;
+}
+
+.portfolio-image-container:hover .portfolio-details {
+    background-color: #ebe2e278;
+    color: rgb(7, 7, 7);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+/* Common Margin Classes */
+
+.mb75px {
+    margin-bottom: 75px;
+    text-align: center;
+
+}
+.mb50px {
+    margin-bottom: 50px;
+}
+
+
+
+
+/*common color classes */
+
+.text-highlight {
+    color: #303963;
+    font-weight: 100;
+
+}
+
+
+
+/* setting background-color */
+
+.mb-blue {
+    background-color: #2857a4;
+}
+
+.mb-orange {
+    background-color: #ec4d1c;
+}
+
+.mb-teal {
+    background-color: #0b8176;
+}
+
+.mb-light-purple {
+    background-color: #93738c;
+}
+
+
+
+/*Percentage Classes */
+
+.eighty-five-percent {
+    height: inherit;
+    width: 50%;
+}
+
+.eighty-percent {
+    height: inherit;
+    width: 80%;
+}
+
+.fifty-percent {
+    height: inherit;
+    width: 50%;
+}
+
+
+
+
+
+/* Contact Form */
+
+#contact {
+    background-color: #b9c2c5;
+
+
+    color: rgb(238, 225, 225);
+    padding-bottom: 2px;
+    
+  
+}
+
+#contact h1,
+#contact h1 span {
+    color: rgb(68, 61, 61);
+}
+
+#contact-form {
+    margin-left: 20%;
+}
+
+#contact-container {
+    display: flex;
+}
+
+#my-details-container {
+    width: 35%;
+    margin-left: 6%;
+}
+
+#my-details-container h3 {
+    color: rgb(50, 47, 47);
+    font-weight: 550;
+    font-size: 1.2rem;
+}
+
+#contact-form-container {
+    width: 50%;
+}
+
+#my-details-container p {
+    color: #3b3f40;
+    font-size: 0.9rem;
+}
+
+.my-details-info-container {
+    margin-bottom: 20px;
+    color: #404647;
+    font-size: 1rem;
+}
+
+.my-details-info-container span {
+    margin-left: 0.4rem;
+}
+
+.my-details-info-container i {
+    color: rgb(62, 55, 55);
+}
+
+.my-details-icon {
+    width: 1rem;
+    height: 1rem;
+    vertical-align: bottom;
+    margin-right: 0.5rem;
+   
+}
+
+
+#contact-form input,
+textarea {
+    max-width: 90%;
+    margin: 15px;
+    padding: 4px 10px;
+    border: 0px solid transparent;
+    border-bottom: 2px solid rgb(71, 65, 65);
+    color: #4d5152;
+    background: transparent;
+    width: 90%;
+    line-height: 1.6;
+    font-size: 1.05rem;
+}
+
+#contact-form button[type="submit"] {
+    background: transparent;
+    font-size: 0.95rem;
+    border: 2px solid rgb(64, 59, 59);
+    margin-top: 5%;
+    margin-left: 35%;
+    border-radius: 2px;
+    color: rgb(84, 75, 75);
+    font-family: sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.046875em;
+    line-height: 1;
+    padding: 0.8em 0.8em 0.78em;
+    text-transform: uppercase;
+}
+
+#contact-form button:hover {
+    background: white;
+    color: #13386fe0;
+}
+
+#contact .social-icons li a i {
+    font-size: 1.5rem;
+    margin: 40px 10px 10px;
+    padding: 10px 14px 20px 10px;
+
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+
+
+/* Common Margin Classes */
+
+.mb75px {
+    margin-bottom: 75px;
+}
+
+.mb50px {
+    margin-bottom: 50px;
+}
+
+
+
+/*common color classes */
+
+.text-highlight {
+    color: #2857a4;
+    font-weight: 600;
+
+}
+
+
+
+/* setting background-color */
+
+.mb-blue {
+    background-color: #2857a4;
+}
+
+.mb-orange {
+    background-color: #ec4d1c;
+}
+
+.mb-teal {
+    background-color: #0b8176;
+}
+
+.mb-light-purple {
+    background-color: #93738c;
+}
+
+
+
+/*Percentage Classes */
+
+.eighty-five-percent {
+    height: inherit;
+    width: 85%;
+}
+
+.eighty-percent {
+    height: inherit;
+    width: 80%;
+}
+
+.fifty-percent {
+    height: inherit;
+    width: 50%;
+}
+
+
+/*bakchodi 2*/
